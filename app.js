@@ -5,7 +5,7 @@ let users = [
         password: 123
     },
 ]
-// let PORT = process.env.PORT || 3000;
+let PORT = process.env.PORT || 3000;
 let express = require("express");
 let cors = require("cors");
 let morgan = require("morgan");
@@ -44,6 +44,6 @@ app.post("/signup", (req, res, next) => {
    
 
 })
-app.listen(3000, () => {
-    console.log("server is running on " + 3000)
+app.listen(PORT, () => {
+    console.log("server is running on " + PORT)
 }); 
